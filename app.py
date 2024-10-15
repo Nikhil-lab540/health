@@ -49,7 +49,7 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.set_page_config(page_title="Gemini Health App")
+
 
 st.header("Gemini Health App")
 input=st.text_input("Input Prompt: ",key="input")
