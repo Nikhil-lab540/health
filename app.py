@@ -35,6 +35,20 @@ def input_image_setup(uploaded_file):
     
 ##initialize our streamlit app
 
+hide_st_style = """
+            <style>
+            /* Hide Streamlit's default hamburger menu */
+            #MainMenu {visibility: hidden;}
+            
+            /* Hide Streamlit's footer (the "Made with Streamlit" footer) */
+            footer {visibility: hidden;}
+            
+            /* Hide Streamlit's "Deploy" button */
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.set_page_config(page_title="Gemini Health App")
 
 st.header("Gemini Health App")
