@@ -52,7 +52,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.header("Gemini Health App")
-input=st.text_input("Input Prompt: ",key="input")
+# input=st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
 if uploaded_file is not None:
